@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="https://i.imgur.com/LIIcmm5.png" alt="Argus Logo" width="150" /></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="assets/logo.png" alt="Argus Logo" width="150" /></a>
   </p>
   <h1 align="center"><b>Project Argus</b></h1>
   <p align="center">
@@ -151,4 +151,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 -   **Playwright:** For the powerful browser automation that makes high-accuracy checking possible.
 -   **Rich:** For beautiful and informative terminal output.
--   **Imgur:** For hosting the logo.
