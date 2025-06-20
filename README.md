@@ -1,89 +1,94 @@
-# Project Argus 👁️‍🗨️
+<div align="center">
+  <br />
+  <p>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="https://i.imgur.com/LIIcmm5.png" alt="Argus Logo" width="150" /></a>
+  </p>
+  <h1 align="center"><b>Project Argus</b></h1>
+  <p align="center">
+    An advanced OSINT tool for username reconnaissance across a multitude of websites.
+    <br />
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues/new?template=bug_report.md">Report Bug</a>
+    ·
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues/new?template=feature_request.md">Request Feature</a>
+  </p>
 
-Project Argus is an advanced OSINT (Open Source Intelligence) tool developed to search for a specific username across various websites and report on the findings. It presents the results both on the command line and in a modern HTML report.
+  <p align="center">
+    <a href="/LICENSE"><img src="https://img.shields.io/github/license/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="license"></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/stargazers"><img src="https://img.shields.io/github/stars/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="stars"></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues"><img src="https://img.shields.io/github/issues/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="issues"></a>
+  </p>
+</div>
 
-## Report Sample (HTML)
-A clean, modern HTML report is generated for each scan, showing all found accounts categorized by their area (e.g., Coding, Social Media, Gaming).
+---
 
-```
-Argus Report for: example_user
-=================================
+## 📖 About
 
-Found Accounts (Total: 3)
----------------------------------
+**Project Argus** is an advanced OSINT (Open Source Intelligence) tool developed to search for a specific username across various websites and report on the findings. It leverages modern technologies like Playwright to ensure high accuracy on dynamic, JavaScript-heavy sites where traditional tools might fail. The results are presented both on the command line and in a clean, modern HTML report.
 
-[+] Coding
-    - GitHub: https://github.com/example_user (Followers: 123)
+## ✨ Features
 
-[+] Forum
-    - HackerNews: https://news.ycombinator.com/user?id=example_user (Karma: 456)
+-   **Wide Reach:** Searches for usernames on over 90 popular websites.
+-   **High Accuracy:** Uses Playwright for reliable detection on dynamic, single-page applications (SPAs).
+-   **Concurrent Scanning:** Employs a thread pool for fast, concurrent scanning of multiple sites.
+-   **Data Scraping:** Includes scrapers for popular sites like GitHub, Twitch, and Steam to fetch additional profile data (e.g., follower counts, karma).
+-   **Intelligent Error Handling:** An `error_check` mechanism minimizes false positives by verifying "user not found" messages unique to each site.
+-   **Clean Reporting:** Displays results in a colorized table in the terminal (`rich`) and generates a stylish, self-contained HTML report (`-o` flag).
+-   **Extensible:** Easily add or edit sites by modifying the `sites.json` file.
 
-[+] Gaming
-    - Steam: https://steamcommunity.com/id/example_user (Level: 78)
-```
+## 🚀 Getting Started
 
+### Prerequisites
 
-## Features
+-   Python 3.8+
+-   Git
 
--   Searches for usernames on over 90 popular websites.
--   Easily add or edit sites via the `sites.json` file.
--   Displays results in a clean, colorized table in the terminal using `rich`.
--   Generates a modern and stylish HTML report for found accounts (`-o` or `--output` flag).
--   High accuracy on JavaScript-heavy sites thanks to Playwright and concurrent processing.
--   `error_check` mechanism to minimize false positives by checking for "user not found" messages.
--   Built-in data scrapers for popular sites like GitHub, Twitch, Steam, and more to fetch extra profile data.
+### ⚙️ Installation
 
-## Installation
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/kadirsenturk/Argus-OSINT-Tool.git
+    cd Argus-OSINT-Tool
+    ```
 
-Python 3.8 or higher is required to run the project.
+2.  **Create and Activate a Virtual Environment (Recommended):**
+    ```bash
+    # Windows
+    python -m venv venv
+    venv\Scripts\activate
 
-**1. Clone the Repository:**
-```bash
-git clone https://github.com/kadirsenturk/Argus-OSINT-Tool.git
-cd Argus-OSINT-Tool
-```
+    # macOS / Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-**2. Create and Activate a Virtual Environment (Recommended):**
-```bash
-# Windows
-python -m venv venv
-venv\\Scripts\\activate
+3.  **Install Required Libraries:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-# macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
-```
+4.  **Install Playwright Browsers:**
+    This one-time command downloads the necessary browser engines for automation.
+    ```bash
+    playwright install
+    ```
 
-**3. Install Required Libraries:**
-```bash
-pip install -r requirements.txt
-```
-
-**4. Install Playwright Browsers:**
-This command will download the necessary browser engines (Chromium, Firefox, WebKit) for automation.
-```bash
-playwright install
-```
-
-## Usage
+### ▶️ Usage
 
 You can perform a username search by running the `argus.py` script from the command line.
 
-**Basic Search:**
-```bash
-python argus.py <username>
-```
-*Example:* `python argus.py aydinpy`
+-   **Basic Search:**
+    ```bash
+    python argus.py <username>
+    ```
+    *Example:* `python argus.py aydinpy`
 
-**Generating an HTML Report:**
-Use the `-o` or `--output` flag to create an HTML report for the found accounts. The report will be saved in the same directory.
-```bash
-python argus.py <username> -o
-```
-This command will create a file named `report_<username>.html`.
+-   **Generating an HTML Report:**
+    Use the `-o` or `--output` flag to create an HTML report. The report will be saved as `report_<username>.html` in the same directory.
+    ```bash
+    python argus.py <username> -o
+    ```
 
-
-### All Arguments
+### 📋 All Arguments
 ```
 usage: argus.py [-h] [-o] query
 
@@ -97,18 +102,18 @@ options:
   -o, --output Generate an HTML report for the found accounts.
 ```
 
-## Configuration (`sites.json`)
+## 🔧 Configuration (`sites.json`)
 
-The heart of the project is the `sites.json` file. This file defines which sites the program will search and how it will interact with them.
+The core of the project is the `sites.json` file, which defines the websites to be scanned.
 
 -   **Adding/Removing Sites:** You can edit this file to add a new site or remove an existing one.
 -   **Enabling/Disabling Scrapers:**
-    -   `"scraper": true`: The program will attempt to scrape profile information for this site. This requires a corresponding `scrape_...` function in `argus.py`.
-    -   `"scraper": false`: The program only checks for the existence of the username. This is useful for sites with strong bot protection or for which a scraper has not yet been written.
--   **Error Checking:** The `"error_check"` field contains a list of strings that appear on "user not found" pages. This is crucial for preventing false positives.
--   **URL Formatting:** Use `{username}` as the placeholder for the username in the URL.
+    -   `"scraper": true`: Argus will attempt to scrape profile information. This requires a corresponding `scrape_...` function in `argus.py`.
+    -   `"scraper": false`: Argus only checks for the existence of the username. Ideal for sites with strong bot protection.
+-   **Error Checking:** The `"error_check"` field contains strings that appear on "user not found" pages. This is crucial for accuracy.
+-   **URL Formatting:** Use `{username}` as the placeholder for the username in the site's URL.
 
-### `sites.json` Example Structure
+#### `sites.json` Example
 ```json
 {
   "GitHub": {
@@ -126,4 +131,24 @@ The heart of the project is the `sites.json` file. This file defines which sites
     "error_check": "Page not found"
   }
 }
-``` 
+```
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🙏 Acknowledgments
+
+-   **Playwright:** For the powerful browser automation that makes high-accuracy checking possible.
+-   **Rich:** For beautiful and informative terminal output.
+-   **Imgur:** For hosting the logo.
