@@ -13,9 +13,12 @@
   </p>
 
   <p align="center">
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/releases"><img src="https://img.shields.io/github/v/release/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="release"></a>
     <a href="/LICENSE"><img src="https://img.shields.io/github/license/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="license"></a>
     <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/stargazers"><img src="https://img.shields.io/github/stars/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="stars"></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/network/members"><img src="https://img.shields.io/github/forks/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="forks"></a>
     <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues"><img src="https://img.shields.io/github/issues/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="issues"></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/commits/main"><img src="https://img.shields.io/github/last-commit/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="last-commit"></a>
   </p>
 </div>
 
