@@ -1,0 +1,504 @@
+{
+  "Instagram": {
+    "url": "https://www.instagram.com/{username}",
+    "category": "Social Media",
+    "note": "Profile page",
+    "scraper": false,
+    "error_check": [
+      "Sorry, this page isn't available",
+      "Üzgünüz, bu sayfaya ulaşılamıyor"
+    ]
+  },
+  "GitHub": {
+    "url": "https://www.github.com/{username}",
+    "category": "Coding",
+    "scraper": true,
+    "note": "Profile page",
+    "error_check": "Not Found"
+  },
+  "X (Twitter)": {
+    "url": "https://x.com/{username}",
+    "category": "Social Media",
+    "note": "Profile page",
+    "error_check": [
+      "This account doesn't exist",
+      "Böyle bir hesap yok"
+    ]
+  },
+  "Reddit": {
+    "url": "https://www.reddit.com/user/{username}",
+    "category": "Forum",
+    "scraper": true,
+    "note": "User profile",
+    "error_check": "Sorry, nobody on Reddit goes by that name"
+  },
+  "TikTok": {
+    "url": "https://www.tiktok.com/@{username}",
+    "category": "Social Media",
+    "note": "Profile page",
+    "error_check": "Couldn't find this account"
+  },
+  "YouTube": {
+    "url": "https://www.youtube.com/@{username}",
+    "category": "Video",
+    "note": "User channel",
+    "error_check": "This channel does not exist."
+  },
+  "Facebook": {
+    "url": "https://www.facebook.com/{username}",
+    "category": "Social Media",
+    "note": "Profile page",
+    "error_check": "This content isn't available right now"
+  },
+  "Pinterest": {
+    "url": "https://www.pinterest.com/{username}",
+    "category": "Design",
+    "note": "Profile page",
+    "error_check": "Hmm, we can't find that page."
+  },
+  "Vimeo": {
+    "url": "https://vimeo.com/{username}",
+    "category": "Video",
+    "note": "Profile page",
+    "error_check": "We couldn't find that page"
+  },
+  "Twitch": {
+    "url": "https://www.twitch.tv/{username}",
+    "category": "Gaming",
+    "scraper": true,
+    "note": "Channel page",
+    "error_check": "Sorry. Unless you've got a time machine, that content is unavailable."
+  },
+  "Medium": {
+    "url": "https://medium.com/@{username}",
+    "category": "Blog",
+    "scraper": false,
+    "note": "Advanced bot protection, scraper disabled.",
+    "error_check": "Page not found"
+  },
+  "SoundCloud": {
+    "url": "https://soundcloud.com/{username}",
+    "category": "Music",
+    "note": "Artist profile",
+    "error_check": "We can't find that user."
+  },
+  "Behance": {
+    "url": "https://www.behance.net/{username}",
+    "category": "Design",
+    "note": "Designer profile",
+    "error_check": "PAGE NOT FOUND"
+  },
+  "Bluesky": {
+    "url": "https://bsky.app/profile/{username}",
+    "category": "Social Media",
+    "scraper": false,
+    "note": "Requires full handle (e.g., user.bsky.social).",
+    "error_check": "handle must be a valid handle"
+  },
+  "Dribbble": {
+    "url": "https://dribbble.com/{username}",
+    "category": "Design",
+    "note": "Designer profile",
+    "error_check": "Whoops, that page is gone."
+  },
+  "GitLab": {
+    "url": "https://gitlab.com/{username}",
+    "category": "Coding",
+    "scraper": true,
+    "note": "Profile page",
+    "error_check": "Page Not Found"
+  },
+  "Wattpad": {
+    "url": "https://www.wattpad.com/user/{username}",
+    "category": "Writing",
+    "note": "Author profile",
+    "error_check": "User not found"
+  },
+  "Imgur": {
+    "url": "https://imgur.com/user/{username}",
+    "category": "Photography",
+    "note": "User profile",
+    "error_check": "The page you're looking for is not here"
+  },
+  "9GAG": {
+    "url": "https://9gag.com/u/{username}",
+    "category": "Entertainment",
+    "scraper": false,
+    "note": "Scraper disabled due to bot protection.",
+    "error_check": "Page Not Found"
+  },
+  "DeviantArt": {
+    "url": "https://www.deviantart.com/{username}",
+    "category": "Design",
+    "scraper": false,
+    "note": "Scraper disabled due to dynamic site structure.",
+    "error_check": "Page not found"
+  },
+  "Last.fm": {
+    "url": "https://www.last.fm/user/{username}",
+    "category": "Music",
+    "note": "Music profile",
+    "error_check": "User not found"
+  },
+  "Steam": {
+    "url": "https://steamcommunity.com/id/{username}",
+    "category": "Gaming",
+    "scraper": true,
+    "note": "Gaming profile",
+    "error_check": "The specified profile could not be found."
+  },
+  "Roblox": {
+    "url": "https://www.roblox.com/user.aspx?username={username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "Page cannot be found or no longer exists"
+  },
+  "Fiverr": {
+    "url": "https://www.fiverr.com/{username}",
+    "category": "Business",
+    "note": "Freelancer profile",
+    "error_check": "fiverr-page-not-found"
+  },
+  "Trello": {
+    "url": "https://trello.com/u/{username}",
+    "category": "Business",
+    "note": "Profile page",
+    "error_check": "This page is not available"
+  },
+  "Spotify": {
+    "url": "https://open.spotify.com/user/{username}",
+    "category": "Music",
+    "note": "Music profile",
+    "error_check": "Page not found"
+  },
+  "Pastebin": {
+    "url": "https://pastebin.com/u/{username}",
+    "category": "Coding",
+    "scraper": false,
+    "note": "Advanced bot protection, scraper disabled.",
+    "error_check": "Not Found (#404)"
+  },
+  "Telegram": {
+    "url": "https://t.me/{username}",
+    "category": "Social Media",
+    "note": "User profile",
+    "error_check": "If you have a Telegram account, you can contact"
+  },
+  "HackerNews": {
+    "url": "https://news.ycombinator.com/user?id={username}",
+    "category": "Forum",
+    "scraper": true,
+    "note": "Forum profile",
+    "error_check": "No such user."
+  },
+  "Keybase": {
+    "url": "https://keybase.io/{username}",
+    "category": "Security",
+    "note": "Security profile",
+    "error_check": "user not found"
+  },
+  "Etsy": {
+    "url": "https://www.etsy.com/people/{username}",
+    "category": "Shopping",
+    "note": "Seller profile",
+    "error_check": "We looked high and low, but couldn't find the page you're looking for."
+  },
+  "CashApp": {
+    "url": "https://cash.app/${username}",
+    "category": "Finance",
+    "note": "Payment profile",
+    "error_check": "Page not found"
+  },
+  "Patreon": {
+    "url": "https://www.patreon.com/{username}",
+    "category": "Finance",
+    "note": "Creator profile",
+    "error_check": "is not a Patreon creator"
+  },
+  "ReverbNation": {
+    "url": "https://www.reverbnation.com/{username}",
+    "category": "Music",
+    "note": "Musician profile",
+    "error_check": "The page you are looking for is not here"
+  },
+  "Slack": {
+    "url": "https://{username}.slack.com",
+    "category": "Business",
+    "note": "Workspace",
+    "error_check": "There was a problem"
+  },
+  "TripAdvisor": {
+    "url": "https://www.tripadvisor.com/Profile/{username}",
+    "category": "Travel",
+    "note": "Travel profile",
+    "error_check": "This page is temporarily unavailable."
+  },
+  "Wikipedia": {
+    "url": "https://www.wikipedia.org/wiki/User:{username}",
+    "category": "Information",
+    "note": "Editor profile",
+    "error_check": "Wikipedia does not have a user page with this exact name"
+  },
+  "WordPress": {
+    "url": "https://{username}.wordpress.com",
+    "category": "Blog",
+    "note": "Blog",
+    "error_check": "doesn&#039;t&nbsp;exist"
+  },
+  "About.me": {
+    "url": "https://about.me/{username}",
+    "category": "Social Media",
+    "note": "Personal profile",
+    "error_check": "we can't find the page you're looking for"
+  },
+  "Bandcamp": {
+    "url": "https://{username}.bandcamp.com/",
+    "category": "Music",
+    "note": "Musician profile",
+    "error_check": [
+      "Whoops, we can't find that page",
+      "Page Not Found | Bandcamp"
+    ]
+  },
+  "Codecademy": {
+    "url": "https://www.codecademy.com/profiles/{username}",
+    "category": "Coding",
+    "note": "Student profile",
+    "error_check": "This page is temporarily unavailable"
+  },
+  "Giphy": {
+    "url": "https://giphy.com/{username}",
+    "category": "Entertainment",
+    "note": "GIF profile",
+    "error_check": "PAGE NOT FOUND"
+  },
+  "Issuu": {
+    "url": "https://issuu.com/{username}",
+    "category": "Writing",
+    "note": "Publication profile",
+    "error_check": "Sorry, the page you are looking for is not available"
+  },
+  "LeetCode": {
+    "url": "https://leetcode.com/{username}",
+    "category": "Coding",
+    "note": "Developer profile",
+    "error_check": "This page does not exist"
+  },
+  "LiveJournal": {
+    "url": "https://{username}.livejournal.com",
+    "category": "Blog",
+    "note": "Blog",
+    "error_check": "is not a registered user"
+  },
+  "Mixcloud": {
+    "url": "https://www.mixcloud.com/{username}",
+    "category": "Music",
+    "note": "DJ profile",
+    "error_check": "This profile could not be found"
+  },
+  "ProductHunt": {
+    "url": "https://www.producthunt.com/@{username}",
+    "category": "Business",
+    "note": "Product profile",
+    "error_check": "This page is gone"
+  },
+  "Quora": {
+    "url": "https://www.quora.com/profile/{username}",
+    "category": "Forum",
+    "note": "Q&A profile",
+    "error_check": "The page you requested was not found"
+  },
+  "Scribd": {
+    "url": "https://www.scribd.com/{username}",
+    "category": "Writing",
+    "note": "Document profile",
+    "error_check": "Document not found"
+  },
+  "SlideShare": {
+    "url": "https://www.slideshare.net/{username}",
+    "category": "Business",
+    "note": "Presentation profile",
+    "error_check": "Page not found"
+  },
+  "StackOverflow": {
+    "url": "https://stackoverflow.com/users/{username}",
+    "category": "Coding",
+    "note": "Developer profile (ID required)",
+    "error_check": "Page Not Found"
+  },
+  "Tumblr": {
+    "url": "https://{username}.tumblr.com",
+    "category": "Blog",
+    "note": "Blog",
+    "error_check": "There's nothing here."
+  },
+  "Venmo": {
+    "url": "https://venmo.com/u/{username}",
+    "category": "Finance",
+    "note": "Payment profile",
+    "error_check": "This page is not available"
+  },
+  "Fandom": {
+    "url": "https://www.fandom.com/u/{username}",
+    "category": "Entertainment",
+    "note": "Fan profile",
+    "error_check": "User profile not found"
+  },
+  "Flickr": {
+    "url": "https://www.flickr.com/people/{username}",
+    "category": "Photography",
+    "note": "Photographer profile",
+    "error_check": "Page not found"
+  },
+  "GamerZ": {
+    "url": "https://www.gamerz.net/user/{username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "The specified user cannot be found"
+  },
+  "Hackaday": {
+    "url": "https://hackaday.io/{username}",
+    "category": "Technology",
+    "note": "Maker profile",
+    "error_check": "That page doesn't exist"
+  },
+  "HackTheBox": {
+    "url": "https://app.hackthebox.com/users/{username}",
+    "category": "Security",
+    "note": "Hacker profile (ID required)",
+    "error_check": "User not found"
+  },
+  "IFTTT": {
+    "url": "https://ifttt.com/p/{username}",
+    "category": "Technology",
+    "note": "Automation profile",
+    "error_check": "The requested page or file does not exist"
+  },
+  "Kongregate": {
+    "url": "https://www.kongregate.com/accounts/{username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "Sorry, no account with that name was found"
+  },
+  "MyAnimeList": {
+    "url": "https://myanimelist.net/profile/{username}",
+    "category": "Entertainment",
+    "scraper": true,
+    "note": "Anime profile",
+    "error_check": "No user with that name exists"
+  },
+  "Newgrounds": {
+    "url": "https://{username}.newgrounds.com",
+    "category": "Entertainment",
+    "note": "Artist/Game profile",
+    "error_check": "The page you are looking for does not exist."
+  },
+  "PokemonShowdown": {
+    "url": "https://pokemonshowdown.com/users/{username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "User not found"
+  },
+  "Redbubble": {
+    "url": "https://www.redbubble.com/people/{username}",
+    "category": "Shopping",
+    "note": "Designer profile",
+    "error_check": "Sorry, we couldn't find the page you were looking for"
+  },
+  "Speedrun": {
+    "url": "https://www.speedrun.com/user/{username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "This user does not exist"
+  },
+  "TryHackMe": {
+    "url": "https://tryhackme.com/p/{username}",
+    "category": "Security",
+    "note": "Hacker profile",
+    "error_check": "Page not found"
+  },
+  "Instructables": {
+    "url": "https://www.instructables.com/member/{username}",
+    "category": "Technology",
+    "note": "Maker profile",
+    "error_check": "we can't find the page you're looking for"
+  },
+  "Kaggle": {
+    "url": "https://www.kaggle.com/{username}",
+    "category": "Coding",
+    "note": "Data scientist profile",
+    "error_check": "Page Not Found"
+  },
+  "Lanyrd": {
+    "url": "https://lanyrd.com/profile/{username}",
+    "category": "Business",
+    "note": "Event profile",
+    "error_check": "Profile not found"
+  },
+  "Linktree": {
+    "url": "https://linktr.ee/{username}",
+    "category": "Social Media",
+    "note": "Link aggregator page",
+    "error_check": "The page you're looking for doesn't exist."
+  },
+  "NationStates": {
+    "url": "https://www.nationstates.net/nation={username}",
+    "category": "Gaming",
+    "note": "Gaming profile",
+    "error_check": "nation does not exist"
+  },
+  "OK": {
+    "url": "https://ok.ru/{username}",
+    "category": "Social Media",
+    "note": "Social media profile",
+    "error_check": "Page not found"
+  },
+  "Paste.ee": {
+    "url": "https://paste.ee/p/{username}",
+    "category": "Coding",
+    "note": "Text sharing profile",
+    "error_check": "Paste not found"
+  },
+  "PCGamer": {
+    "url": "https://forums.pcgamer.com/members/{username}.html",
+    "category": "Gaming",
+    "note": "Forum profile (ID required)",
+    "error_check": "The specified member cannot be found"
+  },
+  "Periscope": {
+    "url": "https://www.periscope.tv/{username}",
+    "category": "Video",
+    "note": "Broadcast profile",
+    "error_check": "This broadcast doesn't exist"
+  },
+  "RaidForums": {
+    "url": "https://raidforums.com/User-{username}",
+    "category": "Forum",
+    "note": "Hacker forum (defunct)",
+    "error_check": "The member you specified is either banned or doesn't exist"
+  },
+  "SourceForge": {
+    "url": "https://sourceforge.net/u/{username}",
+    "category": "Coding",
+    "note": "Developer profile",
+    "error_check": "The page you requested was not found"
+  },
+  "TED": {
+    "url": "https://www.ted.com/profiles/{username}",
+    "category": "Information",
+    "note": "Profile (ID required)",
+    "error_check": "Page not found"
+  },
+  "VK": {
+    "url": "https://vk.com/{username}",
+    "category": "Social Media",
+    "note": "Social media profile",
+    "error_check": "This page is unavailable."
+  },
+  "XDA-Developers": {
+    "url": "https://forum.xda-developers.com/member.php?u={username}",
+    "category": "Technology",
+    "note": "Forum profile (ID required)",
+    "error_check": "Invalid User specified"
+  }
+} 
