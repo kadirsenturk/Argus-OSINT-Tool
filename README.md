@@ -1,24 +1,22 @@
 <div align="center">
-  <br />
-  <p>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="assets/logo.svg" alt="Argus Logo" width="150" /></a>
-  </p>
+  <img src="assets/logo.svg" alt="Argus Logo" width="150">
+
   <h1 align="center"><b>Project Argus</b></h1>
+
   <p align="center">
-    An advanced OSINT tool for username reconnaissance across a multitude of websites.
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/releases"><img src="https://img.shields.io/badge/Argus-v1.0.0-9cf?style=for-the-badge" alt="Release"></a>
+    <a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License"></a>
+    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue?style=for-the-badge" alt="Python"></a>
+    <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/playwright-latest-green?style=for-the-badge" alt="Playwright"></a>
+    <a><img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" alt="Platform"></a>
+  </p>
+
+  <p align="center">
+    Advanced OSINT tool for username reconnaissance across a multitude of websites.
     <br />
     <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues/new?template=bug_report.md">Report Bug</a>
     ·
     <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues/new?template=feature_request.md">Request Feature</a>
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/releases"><img src="https://img.shields.io/github/v/release/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="release"></a>
-    <a href="/LICENSE"><img src="https://img.shields.io/github/license/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="license"></a>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/stargazers"><img src="https://img.shields.io/github/stars/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="stars"></a>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/network/members"><img src="https://img.shields.io/github/forks/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="forks"></a>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/issues"><img src="https://img.shields.io/github/issues/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="issues"></a>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool/commits/main"><img src="https://img.shields.io/github/last-commit/kadirsenturk/Argus-OSINT-Tool?style=for-the-badge" alt="last-commit"></a>
   </p>
 </div>
 
