@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="assets/logo.png" alt="Argus Logo" width="150" /></a>
+    <a href="https://github.com/kadirsenturk/Argus-OSINT-Tool"><img src="assets/logo.svg" alt="Argus Logo" width="150" /></a>
   </p>
   <h1 align="center"><b>Project Argus</b></h1>
   <p align="center">
