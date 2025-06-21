@@ -77,21 +77,15 @@ def scrape_hackernews(soup):
 def scrape_twitch(soup):
     """Scrapes follower count from a Twitch profile page."""
     try:
-        # Twitch is very dynamic, so selectors might be complex or change.
-        # This targets a paragraph tag that is likely to contain the follower count.
-        # A more robust selector might use a `data-test-selector` if available.
         follower_p = soup.find('p', string=lambda t: t and "followers" in t.lower())
         if follower_p:
-            # The count is often in a preceding sibling element
             count_span = follower_p.find_previous_sibling('p')
             if count_span and count_span.find('span'):
                  return f"Followers: {count_span.find('span').text.strip()}"
-            # Fallback for a different structure
             strong_tag = follower_p.find('strong')
             if strong_tag:
                 return f"Followers: {strong_tag.text.strip()}"
         
-        # Fallback to a more generic search for a count near the word "followers"
         follower_count_tag = soup.select_one('p.tw-font-size-5.tw-strong')
         if follower_count_tag:
             return f"Followers: {follower_count_tag.text.strip()}"
@@ -110,8 +104,6 @@ def scrape_steam(soup):
         
         real_name_div = soup.select_one('.actual_persona_name')
         if real_name_div:
-            # Steam often puts the real name in a div below the persona name
-            # We need to find the specific container
             name_container = real_name_div.parent.find('div', class_=None, recursive=False)
             if name_container and name_container.text.strip():
                  details.append(f"Real Name: {name_container.text.strip()}")
@@ -124,14 +116,12 @@ def scrape_myanimelist(soup):
     """Scrapes join date and stats from a MyAnimeList profile."""
     try:
         details = []
-        # Find the "Joined" stat
         joined_span = soup.find('span', class_='user-status-title', string='Joined')
         if joined_span:
             joined_date = joined_span.find_next_sibling('span', class_='user-status-data')
             if joined_date:
                 details.append(f"Joined: {joined_date.text.strip()}")
 
-        # Find other stats
         stats_container = soup.select_one('div.stats.user-stats')
         if stats_container:
             anime_days = stats_container.select_one('div.stat-score a')
